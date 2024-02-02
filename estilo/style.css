@@ -1,0 +1,1143 @@
+@charset "UTF-8"
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+@keyframes pulsar{
+    0%{
+        width: 56px;
+        height: 56px;
+    }
+    100%{
+        width: 65px;
+        height: 65px;
+    }
+}  
+
+*{  margin: 0;
+    padding: 0;
+    font-family: 'Metrophobic', sans-serif;
+    box-sizing: border-box;
+    color: #000;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    padding: 10px;
+    background: #ffffff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+img#logo{
+    max-width: 100px;
+    max-height: 60px;
+    float: left;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+nav a{
+    padding: 17px;
+    text-decoration: none;
+}
+
+div.search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+div.search-box:hover > .search-txt{
+    width: 240px;
+}
+
+div.search-box img{
+    width: 20px;
+    height: 20px;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    width: 0;
+    transition: .5s;
+}
+
+section#inicio{
+    display: block;
+    background-image: url("https://image1.lacoste.com/dw/image/v2/AAQM_PRD/on/demandware.static/Sites-BRECOM-Site/Library-Sites-LacosteContent/pt_BR/dwd49258f1/ss21/Brazil_SS21/StoryBR/chapter-1-story%20banner-desk.jpg?imwidth=1065&impolicy=custom");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    object-fit: cover;
+}
+
+div.inicio{
+    padding-top: 400px;
+    padding-left: 70px;
+    padding-bottom: 300px;
+}
+
+div.inicio button{
+    font-size: 17px;
+    color: #000000b9;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    width: 120px;
+    min-height: 45px;
+    cursor: pointer;
+}
+
+div.inicio button:hover{
+    background-color: #292929;
+    border-color: #545454;
+    color: #fff;
+    transition: 0.7s;
+}
+
+div.inicio p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.05em;
+}
+
+div.inicio h2{
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+section#carouselimagem{
+    max-width: 50vw;
+    position: relative;
+    top: 5vh;
+    bottom: 5vh;
+    left: 50vh;
+    box-shadow: 2px 1px 5px #292929;
+}
+
+div#itemscarousel{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+div#itemscarousel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.itemcarousel{
+    flex: none;
+    width: 50%;
+    height: 400px;
+    scroll-snap-align: start;
+    pointer-events: none;
+}
+
+div#itemscarousel h1{
+    position: absolute;
+    bottom: 1vh;
+    left: 5px;
+    font-family:"Monument Extended";
+    font-weight: lighter;
+    font-size: 64px;
+}
+
+div#h2flex h2{
+    margin-top: 50px;
+    margin-left: 50px;
+    font: inherit;
+    font-weight: 600;
+    font-size: 1.6em;
+    line-height: 3.6rem;
+    color: #292929;
+}
+
+section#categoria{
+    display: block;
+    margin: 3% 0 0 0;
+}
+
+div#categoriall{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div#categoriall p{
+    margin-top: 10px;
+    text-decoration: underline;
+    font-family: inherit;
+    color: #292929d0;
+    font-size: 1.1em;
+}
+
+div#categoriall p:hover{
+    text-decoration: none;
+}
+
+div#categoriall img{
+    display: block;
+    max-width: 500px;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+img.imgscategoria{
+    margin-right: 7vh;
+}
+
+/*Para você*/
+
+div#h2foryou h2{
+    display: block;
+    margin-bottom: 40px;
+    margin-left: 6vh;
+    font-size: 1.6em;
+    color: #292929f6;
+}
+
+section#foryou{
+    max-width: 100vw;
+    position: relative;
+}
+
+div#para-voce{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+section#foryou img{
+    margin-bottom: 5px;
+    object-fit: cover;
+    width: 350x;
+    height: 400px;
+}
+
+div.itemvoce{
+    margin: 5px 0px 0px 20px;
+    scroll-snap-align: center;
+}
+
+div.itemvoce1{
+    margin: 5px 0px 0px 6vh;
+    scroll-snap-align: center;
+}
+
+.pforyou{
+    padding-left: 30px;
+    font-size: 16px;
+    color: #292929;
+    font-family: inherit;
+}
+
+.pforyou:hover{
+    text-decoration: underline;
+}
+
+p.valorparavc{
+    padding: 10px 0px 0px 30px;
+    color: #545454;
+    font-weight: bold;
+    font-family: 'Metrophobic', sans-serif;
+}
+
+section#polohome{
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
+div.divpolohome{
+    /*background-color: #ffa07a68;*/
+    padding: 50px;
+    display: flex;
+    align-items: center;
+}
+
+img.polohome{
+    display: inline-block;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+div.polohomeescrita{
+    padding-left: 100px;
+}
+
+div.polohomeescrita h2{
+    font-size: 1.6em;
+    font-family: 'Metrophobic', sans-serif;
+    color: #292929ee;
+    padding-bottom: 10px;
+}
+
+div.polohomeescrita p{
+    padding-bottom: 20px;
+    font-family: inherit;
+    color: #292929d0;
+}
+
+div.polohomeescrita button{
+    color: #fff;
+    background-color: #292929;
+    border-radius: 20px;
+    border: 1px solid #292929;
+    min-height: 45px;
+    width: 120px;
+    cursor: pointer;
+}
+
+div.polohomeescrita button:hover{
+    background-color: #fff;
+    border-color: #ffffff;
+    color: #292929;
+    transition: 0.7s;
+}
+
+/*Universo Irmãs Buosi*/
+
+div#divuniversoh2{
+    display: block;
+    margin: 7% 0 20px 6vh;
+}
+
+div#divuniversoh2 h2{
+    font-family: 'Metrophobic', sans-serif;
+    font-size: 1.6em;
+    color: #292929f6;
+}
+
+section#sectionuniverso{
+    display: block;
+    margin: 0 0 0 4%;
+}
+
+div#divuniverso{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div#divuniverso img{
+    display: block;
+    max-width: 460px;
+    max-height: 460px;
+    object-fit: cover;
+}
+
+.itemuniverso1{
+    margin-bottom: ;
+}
+
+div#divh2ebuttonuniverso{
+    position: relative;
+    top: -28%;
+    left: 1%;
+}
+
+div#divh2ebuttonuniverso h2{
+    font-size: 1.6em;
+    font-family: 'Metrophobic', sans-serif;
+    color: #292929f1;
+    margin-bottom: 7%;
+}
+
+div#divh2ebuttonuniverso button{
+    color: #fff;
+    background-color: #292929;
+    border-radius: 30px;
+    width: 80px;
+    height: 45px;
+    border: 1px solid #545454;
+    cursor: pointer;
+}
+
+div#divh2ebuttonuniverso button:hover{
+    transition: 0.7s;
+    color: #292929;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+/*Inside Home*/
+
+section#homeinsidesection{
+    display: block;
+    padding: 50px;
+}
+
+div#homeinsidediv{
+    display: block;
+    flex-flow: row wrap;
+}
+
+div.homedivh2inside{
+    display: flex;
+}
+
+div.homedivh2inside h2{
+    font-family: inherit;
+    color: #000000c2;
+    font-size: 1.6em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div.homeimginside{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 3.5vh;
+}
+
+div.homeimginside img{
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+div.h2homeinside{
+    display: inline-block;
+    margin: 5vh 0 0 6vh;
+}
+
+div.homeimginside h2{
+    display: block;
+    color: #292929f5;
+    font-family: 'Metrophobic', sans-serif, Arial;
+}
+
+div.homeimginside p{
+    font-family: inherit;
+    font-weight: 100;
+    line-height: 1.5em;
+    margin-top: 10px;
+    color: #292929e1;
+}
+
+div.homeimginside button{
+    width: 120px;
+    min-height: 45px;
+    margin-top: 20px;
+    background-color: #292929;
+    color: #ffffffe3;
+    border: 1px solid #545454;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    transition: 0.7s;
+}
+
+div.homeimginside button:hover{
+    background-color: #fff;
+    border-color: #fff;
+    color: #292929;
+}
+
+/*Inside da Loja(não na index)*/
+
+div#backgroundhead img{
+    display: flex;
+    width: 97vw;
+}
+
+section#insidesectionhead{
+    display: block;
+}
+
+div#insidedivhead{
+    text-align: center;
+}
+
+div#insidedivhead h2{
+    display: block;
+    color: #292929f5;
+    font-family: 'Metrophobic', sans-serif, Arial;
+}
+
+div#insidedivhead p{
+    display: block;
+    margin-top: 10px;
+    color: #292929e1;
+    font-family: inherit;
+    line-height: 1.5em;
+    font-weight: 100;
+}
+
+section#insidesectionbody{
+    display: block;
+}
+
+div#divinsideh2epbody{
+    display: block;
+    margin: 10% 0 5% 6vh;
+}
+
+div#divinsideh2epbody h2{
+    display: block;
+    color: #292929f5;
+    font-family: 'Metrophobic', sans-serif, Arial;
+}
+
+div#divinsideh2epbody p{
+    display: block;
+    margin-top: 10px;
+    font-family: inherit;
+    line-height: 1.5em;
+    color: #292929e1;
+    font-weight: 100;
+}
+
+div#insidedivbody{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 6vh;
+}
+
+div#insidedivbody img{
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    margin-right: 6vh;
+}
+
+img.insidebodyimg3{
+    margin: 0;
+}
+
+div#insidedivbody h3{
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-size: 1.2em;
+    color: #292929;
+}
+
+div#insidedivbody p{
+    color: #292929e1;
+    font-family: inherit;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+}
+
+/*Final*/
+
+div.final{
+    padding: 50px;
+    font-size: 14px;
+    line-height: 1.5rem;
+    display: column;
+}
+
+ul{
+    padding-left: 50px;
+    padding-bottom: 15px;
+    display: inline-block;
+    list-style: none;
+}
+
+li{
+    display: list-item;
+    font-family: 'Metrophobic', sans-serif;
+}
+li:hover{
+    text-decoration: underline;
+}
+
+li.listprincipal{
+    color: #545454;
+    padding-bottom: 10px;
+    font-size: 1em;
+    line-height: 2rem;
+    text-decoration: none;
+}
+
+li.listprincipal0{
+    color: #545454;
+    font-size: 1em;
+    line-height: 2rem;
+    text-decoration: none;
+}
+
+img#iconwttps{
+    display: inline-block;
+    position: fixed;
+    outline: none;
+    bottom: 10px;
+    right: 10px;
+    width: 56px;
+    height: 56px;
+    animation: pulsar;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+/*Pagina Sale*/
+
+div.inicioicon{
+    margin: 5vh 0vh 3vh 5vh;;
+}
+
+div.inicioicon a{
+    color: #292929a0;
+    font-size: 0.8em;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+section#saleh2section{
+    display: block;
+    margin: 13vh 0vh 13vh 0vh;
+}
+
+div#saleh2div h2{
+    text-align: center;
+    font-size: 2em;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #292929;
+}
+
+section#salesection{
+    display: block;
+}
+
+section#salesection2{
+    display: block;
+    margin: 50px 0px 0px 0px;;
+}
+
+div#saleitemsdiv{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div#saleitemsdiv img{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    object-fit: cover;
+}
+
+p.saleitemp{
+    margin: 7px 0px 0px 20px;
+    font-size: 0.9em;
+    font-family: inherit;
+    color: #292929
+}
+
+p.saleitemp:hover{
+    text-decoration: underline;
+}
+
+p.salepreço{
+    color: #26504c;
+    font-family:"Monument Extended";
+    font-size: 1em;
+    margin: 10px 0px 0px 20px;
+}
+
+div.saledesconto{
+    background-color: #0d564d;
+    color: #fff;
+    border-radius: 5px;
+    width: 8.8em;
+    height: 2em;
+    padding: 5px;
+    margin: 0px 0px 0px 20px;
+    font-size: 0.8em;
+}
+
+/*Pagina Feminino*/
+
+section#femininoh2section{
+    display: block;
+    margin: 0vh 0vh 10vh 5vh;
+}
+
+div#femininoh2div h2{
+    font-size: 1.7em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #292929;
+}
+
+div#resultadofeminino{
+    margin: 0px 0px 10px 30px;
+}
+
+
+div#resultadofeminino p{
+    font-size: 1em;
+    font-family: inherit;
+    color: #292929;
+}
+
+p.femininopreço{
+    color: #545454;
+    font-weight: bold;
+    font-family: 'Metrophobic', sans-serif;
+    margin: 10px 0px 0px 20px;
+}
+
+section.sectionprosseguirlistas{
+    display: block;
+    margin: 10% 0 3% 0;
+}
+
+div.divprosseguirlistas{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div.itemlistaprosseguir{
+    margin: 5px;
+}
+
+div.itemlistaprosseguir div{
+    text-align: center;
+    border-radius: 50%;
+    color: #292929;
+    width: 38px;
+    height: 38px;
+    padding: 10px 6px 10px 5px;
+    transition: 0.4s;
+}
+
+div.itemlistaprosseguir div:hover{
+    background-color: #292929;
+    color: #fff;
+}
+div.itemlistaprosseguir1 div{
+    text-align: center;
+    border-radius: 50%;
+    background-color: #292929;
+    color: #fff;
+    width: 38px;
+    height: 38px;
+    padding: 10px 6px 10px 5px;
+}
+
+div.itemlistaprosseguir3 div{
+    text-align: center;
+    border-radius: 50%;
+    color: #292929;
+    width: 38px;
+    height: 38px;
+    padding: 10px 6px 10px 5px;
+}
+
+/*Pagina Vestidos*/
+
+section#vestidossectionhead{
+    display: block;
+    margin: 5vh 0vh 10vh 0vh;
+}
+
+div#vestidosdivhead{
+    display: flex;
+}
+
+div.vestidositemhead img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div#vestidosh2epdivhead{
+    margin-left: 4%;
+}
+
+h2#vestidosh2divhead{
+    color: #292929;
+    font-family: inherit;
+    margin-bottom: 15px;
+}
+
+p#vestidospdivhead{
+    color: #292929;
+    font-family: inherit;
+    line-height: 1.2em;
+    margin-bottom: 40%;
+}
+
+div#vestidositemsdivhead{
+    display: flex;
+}
+
+div#vestidositemsdivhead img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+div.vestidosdesconto{
+    background-color: #0d564d;
+    color: #fff;
+    border-radius: 5px;
+    width: 8.8em;
+    height: 2em;
+    padding: 5px;
+    margin: 5.6px;
+    font-size: 0.8em;
+}
+
+p.vestidositemphead{
+    margin-left: 5.6px;
+    font-size: 0.9em;
+    font-family: inherit;
+    color: #292929
+}
+
+p.vestidositemphead:hover{
+    text-decoration: underline;
+}
+
+p.vestidospreçohead{
+    color: #26504c;
+    font-family:"Monument Extended";
+    font-size: 1em;
+    margin: 5.6px;
+}
+
+section#vestidossectionbody{
+    display: block;
+    margin: 0px 0px 10px 0px;
+}
+
+div#vestidosdivbody{
+    display: flex;
+    flex-wrap: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div#vestidosdivbody{
+    display: flex;
+    flex-wrap: row;
+    flex-flow: row wrap;
+    margin-bottom: 50px;
+}
+
+div.vestidositems img{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    object-fit: cover;
+}
+
+p.vestidodes{
+    margin: 10px 0px 0px 20px;
+    font-size: 1em;
+    font-family: inherit;
+    color: #292929;
+}
+
+p.vestidodes:hover{
+    text-decoration: underline;
+}
+
+p.vestidospreço{
+    margin: 10px 0px 0px 20px;
+    color: #545454;
+    font-weight: bold;
+    font-family: 'Metrophobic', sans-serif;
+}
+
+/*Página Saias*/
+
+section#saiassectionhead{
+    display: block;
+    margin: 5vh 0vh 10vh 0vh;
+}
+
+div#saiasdivhead{
+    display: flex;
+    margin: 5vh 0vh 10vh 0vh;
+}
+
+div#saiasdivhead img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div#saiash2epdivhead{
+    margin-left: 4%;
+}
+
+h2#saiash2divhead{
+    color: #292929;
+    font-family: inherit;
+    margin-bottom: 15px;
+}
+
+p#saiaspdivhead{
+    color: #292929;
+    font-family: inherit;
+    line-height: 1.2em;
+    margin-bottom: 40%;
+}
+
+div#saiasitemdivhead{
+    display: block;
+}
+
+div#saiasitemdivhead img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+section#saiassectionbody{
+    display: block;
+    margin: 0px 0px 10px 0px;
+}
+
+section#saiassectionbody2{
+    display: block;
+    margin: 30px 0px 10px 0px;
+}
+
+div#saiasdivbody{
+    display: flex;
+    flex-wrap: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.saiasitems img{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    object-fit: cover;
+}
+
+/*Parte de blusas*/
+
+section#blusassectionhead{
+    display: block;
+    margin: 5vh 0vh 10vh 0vh;
+}
+
+div#blusasdivhead{
+    display: flex;
+}
+
+div.blusasdivhead img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div#blusash2epdivhead{
+    display: block;
+    margin-left: 4%;
+}
+
+h2#blusash2divhead{
+    color: #292929;
+    font-family: inherit;
+    margin-bottom: 15px;
+}
+
+p#blusaspdivhead{
+    color: #292929;
+    font-family: inherit;
+    line-height: 1.2em;
+    margin-bottom: 40%;
+}
+
+div#saiasitemsdivhead{
+    display: block;
+}
+
+div#saiasitemsdivhead img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+section#blusassectionbody{
+    display: block;
+    margin: 0px 0px 10px 0px;
+}
+
+section#blusassectionbody2{
+    display: block;
+    margin: 30px 0px 10px 0px;
+}
+
+div#blusasdivbody{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div#blusasdivbody img{
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/*Pagina base compras*/
+
+section.comprassection{
+    display: block;
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+
+div.comprasdiv{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+}
+
+div.comprasdiv img{
+    max-width: 684px;
+    height: 684px;
+    object-fit: cover;
+}
+
+div.comprasdesconto{
+    background-color: #0d564d;
+    color: #fff;
+    border-radius: 5px;
+    width: 8.8em;
+    height: 1.8em;
+    padding: 5px;
+    margin: 50px 0px 20px 15vh;
+    font-size: 0.8em;
+}
+
+p.pcompra{
+    margin: 0px 0px 15px 15vh;
+    color: #292929de;
+    font-size: 1.2em;
+    font-family: inherit;
+}
+
+p.pcompratype2{
+    margin: 50px 0px 15px 15vh;
+    color: #292929de;
+    font-size: 1.2em;
+    font-family: inherit;
+}
+
+p.comprapreço{
+    margin: 0px 0px 0px 15vh;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: inherit;
+    color: #0d564d;
+}
+
+div.comprabuttondiv{
+    display: block;
+    margin: 20vh 0 0 15vh;
+}
+
+div.comprabuttondiv button{
+    font-size: 16px;
+    font-family: inherit;
+    background-color: #292929;
+    border: 1px solid #545454;
+    width: 100%;
+    border-radius: 30px;
+    color:#ffffffc9;
+    height: 54px;
+    cursor: pointer;
+}
+
+div.comprabuttondiv button:hover{
+    transition: 0.7s;
+    background-color: #fff;
+    border-color: #fff;
+    color: #292929;
+}
+
+section.comprassectiondes{
+    display: block;
+    margin: 0 0 0 50px;
+}
+
+div.comprasdivdes{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div.compraimgdes{
+    margin: 0 0 0 20%;
+}
+
+div.comprasdivdes img{
+    max-width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+h3.h3compra{
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 1.2em;
+    font-family: inherit;
+    color: #292929fa;
+}
+
+h4.h4compra{
+    padding-bottom: 20px;
+    color: #292929d0;
+    font-weight: bolder;
+    font-size: 0.6em;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+p.pcomprades{
+    color: #292929c7;
+    font-size: 1em;
+    line-height: 1.7rem;
+}
+
+ul.licomprades{
+    margin-top: 20px;
+    list-style: circle;
+}
+
+ul.licomprades li{
+    text-decoration: none;
+    color: #292929c7;
+    font-size: 1em;
+    line-height: 1.7rem;
+}
