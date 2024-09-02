@@ -84,10 +84,10 @@ div.inicio{
 
 div.inicio button{
     font-size: 17px;
-    color: #000000b9;
+    color: #ffffffb9;
     border-radius: 20px;
-    border: 1px solid #ffffff;
-    background-color: #ffffff;
+    border: none;
+    background-color: #402516;
     width: 120px;
     min-height: 45px;
     cursor: pointer;
